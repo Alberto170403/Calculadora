@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/cuadroTexto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="end|center_vertical"
+        android:textSize="30sp"
+        android:padding="10dp"
+        android:background="@android:color/darker_gray"
+        android:textColor="#FFFFFF"
+        android:inputType="none"
+        android:enabled="false"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TableLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toBottomOf="@id/cuadroTexto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:stretchColumns="*">
+
+        <TableRow>
+            <Button
+                android:id="@+id/btn7"
+                style="@style/botonrecto"
+                android:text="7" />
+            <Button
+                android:id="@+id/btn8"
+                style="@style/botonrecto"
+                android:text="8" />
+            <Button
+                android:id="@+id/btn9"
+                style="@style/botonrecto"
+                android:text="9" />
+            <Button
+                android:id="@+id/btnDivision"
+                style="@style/botonrecto"
+                android:text="/" />
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:id="@+id/btn4"
+                style="@style/botonrecto"
+                android:text="4" />
+            <Button
+                android:id="@+id/btn5"
+                style="@style/botonrecto"
+                android:text="5" />
+            <Button
+                android:id="@+id/btn6"
+                style="@style/botonrecto"
+                android:text="6" />
+            <Button
+                android:id="@+id/btnMultiplicacion"
+                style="@style/botonrecto"
+                android:text="*" />
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:id="@+id/btn1"
+                style="@style/botonrecto"
+                android:text="1" />
+            <Button
+                android:id="@+id/btn2"
+                style="@style/botonrecto"
+                android:text="2" />
+            <Button
+                android:id="@+id/btn3"
+                style="@style/botonrecto"
+                android:text="3" />
+            <Button
+                android:id="@+id/btnResta"
+                style="@style/botonrecto"
+                android:text="-" />
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:id="@+id/btn0"
+                style="@style/botonrecto"
+                android:text="0"
+                android:layout_span="2" />
+            <Button
+                android:id="@+id/btnClear"
+                style="@style/botonrecto"
+                android:text="C" />
+            <Button
+                android:id="@+id/btnSuma"
+                style="@style/botonrecto"
+                android:text="+" />
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:id="@+id/btnIgual"
+                style="@style/botonrecto"
+                android:text="="
+                android:layout_span="4"
+                android:layout_gravity="fill_horizontal" />
+        </TableRow>
+
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
